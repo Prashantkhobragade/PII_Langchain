@@ -34,6 +34,7 @@ def print_colored_pii(string):
         r"(<[^>]*>)", lambda m: "\033[31m" + m.group(1) + "\033[0m", string
     )
     print(colored_string)
+    st.markdown(colored_string, unsafe_allow_html=True)
     
 def anonymize_pii(document_content):
     try:
