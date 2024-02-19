@@ -55,7 +55,7 @@ def main():
     
     st.title("PII Anonymizer")
 
-    document_content = st.text_area("Enter document content: ")
+    document_content = st.text_area("Enter document content: ", height=200, width=400)
     
     if st.button("Anonymize" ):
         if document_content:
